@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922057413809",
+    "project_id": "petlocation-416805",
+    "storage_bucket": "petlocation-416805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922057413809:android:0802f937f45dc3e92b7e90",
+        "android_client_info": {
+          "package_name": "com.example.petlocation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp2xHXpXhg0tQKgsbUd39X65S27-0iUMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
