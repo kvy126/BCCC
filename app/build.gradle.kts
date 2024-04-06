@@ -43,4 +43,10 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-database:20.3.1")
+    implementation("com.mapbox.mapboxsdk:mapbox-android-sdk:9.5.0")
+    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.journeyapps:zxing-android-embedded:3.6.0")
+    testImplementation("junit:junit:4.12")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("io.socket:socket.io-client:1.0.0")
 }
