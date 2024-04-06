@@ -1,10 +1,12 @@
 package com.example.petlocation.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -28,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText editTextNewEmail, editTextNewPassword;
     private Button buttonRegister;
-
+    private TextView textViewLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         editTextNewEmail = findViewById(R.id.editTextNewEmail);
         editTextNewPassword = findViewById(R.id.editTextNewPassword);
         buttonRegister = findViewById(R.id.buttonRegister);
+        textViewLogin=findViewById(R.id.textViewLogin);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +48,13 @@ public class RegisterActivity extends AppCompatActivity {
                 registerUser(email, password);
             }
         });
+        textViewLogin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+            }
+        });
+
 
     }
 
