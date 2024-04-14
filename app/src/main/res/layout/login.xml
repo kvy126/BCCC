@@ -9,27 +9,27 @@
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
         android:layout_marginBottom="16dp"
+        android:hint="Email"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
         android:layout_below="@id/editTextEmail"
         android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
         android:layout_below="@id/editTextPassword"
         android:layout_marginBottom="16dp"
+        android:text="Login"
         tools:ignore="MissingConstraints" />
 
 
@@ -37,10 +37,10 @@
         android:id="@+id/textViewRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
         android:text="Don't have an account? Register here."
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
-        android:layout_below="@id/buttonLogin"
         tools:ignore="MissingConstraints" />
 
 </RelativeLayout>

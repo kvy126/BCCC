@@ -31,6 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText editTextNewEmail, editTextNewPassword;
     private Button buttonRegister;
     private TextView textViewLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         editTextNewEmail = findViewById(R.id.editTextNewEmail);
         editTextNewPassword = findViewById(R.id.editTextNewPassword);
         buttonRegister = findViewById(R.id.buttonRegister);
-        textViewLogin=findViewById(R.id.textViewLogin);
+        textViewLogin = findViewById(R.id.textViewLogin);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,14 +49,12 @@ public class RegisterActivity extends AppCompatActivity {
                 registerUser(email, password);
             }
         });
-        textViewLogin.setOnClickListener(new View.OnClickListener(){
+        textViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+            public void onClick(View view) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
             }
         });
-
-
     }
 
     private void registerUser(String email, String password) {
@@ -81,4 +80,3 @@ public class RegisterActivity extends AppCompatActivity {
                 });
     }
 }
-

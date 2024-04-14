@@ -1,10 +1,9 @@
 package com.example.petlocation.model;
 
 import java.util.HashMap;
-import java.util.Objects;
 
 public class User {
-    private String uuid,email;
+    private String uuid, email;
 
     public User() {
     }
@@ -29,10 +28,11 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-    public HashMap<String, Object> convertHashMap(){
-        HashMap<String,Object> u=new HashMap<>();
-        u.put("uuid",uuid);
-        u.put("email",email);
+
+    public HashMap<String, Object> convertHashMap() {
+        HashMap<String, Object> u = new HashMap<>();
+        u.put("uuid", uuid);
+        u.put("email", email);
         return u;
     }
 }
