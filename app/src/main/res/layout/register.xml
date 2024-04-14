@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNewEmail"
+        android:hint="Email"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNewPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextNewEmail"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegister"
+        android:text="Register"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLogin"
+        android:text="Already have an account Login here."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@id/buttonRegister"/>
+
+</RelativeLayout>
